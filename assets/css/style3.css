@@ -1,0 +1,108 @@
+.principal_body {
+    background-image: url(../img/admin.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+
+.btn_administracion {
+    background-color: #46A2FD;
+    font-size: 14px;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    border-color: #d8d8d8;
+    padding-top: 5px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 35px;
+}
+
+.btn_todosLosPuestos {
+    background-color: #46A2FD;
+    font-size: 14px;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    text-align: center;
+    border-color: #d8d8d8;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 35px;
+}
+
+.btn_buscar {
+    background-color: #46A2FD;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: #d8d8d8;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 35px;
+}
+
+.input_buscar {
+    margin-right: center;
+    border-radius: 15px;
+    size: 50px;
+    margin-top: 20px;
+}
+
+.btn_registrarse {
+    background-color: #46A2FD;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: #d8d8d8;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 35px;
+}
+
+.btn_crearPuesto {
+    background-color: #46A2FD;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-color: #d8d8d8;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 35px;
+}
+
+.btn_mostrar {
+    background-color: #46A2FD;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-color: #d8d8d8;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 35px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}

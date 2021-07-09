@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style3.css">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</head>
+
+<body class="principal_body">
+    <div class="container-fluid col-md-10" style="background-color: #ffff; ">
+        <br>
+        <h2 style="text-align: center; color: #46A2FD;">Bienvenido a WorldJobs </h2>
+
+        <form method=POST action="search.php">
+            <fieldset>
+
+                <input type=hidden name=ie value=UTF-8 />
+                <input type=hidden name=oe value=UTF-8 />
+
+                <div>
+                    <INPUT TYPE=text id="s" name="posicion" value="" size="50" class="input_buscar bt-4" />
+                    <INPUT class="btn_buscar" type=submit id=" x " name=btnG VALUE="Buscar " />
+                </div>
+
+            </fieldset>
+        </form>
+        <div class="row mt-4 ">
+            <div class="col-1"></div>
+            <a href="user/loginadmin.php " class="col-5 btn btn-success btn_administracion mb-4 ">Administracion</a>
+            <a href="allpost.html " class="col-5 btn btn-success btn_todosLosPuestos mb-4 ">Todos los puestos</a>
+            <div class="col-1"></div>
+        </div>
+        <div class="col mb-4">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top " width="100% " height="225 " xmlns="http://www.w3.org/2000/svg " role="img " aria-label="Placeholder: Thumbnail " preserveAspectRatio="xMidYMid slice " focusable="false ">
+                    <title>Placeholder</title>
+                    <rect width="100% " height="100% " fill="#55595c "></rect>
+                    <text x="20% " y="50% " fill="#eceeef " dy=".3em ">Registrate para poder subir tu puesto</text>
+                </svg>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center ">
+                        <div class="btn-group ">
+                            <a href="user/registro.html " class="btn btn-success btn_registrarse">Registrarse </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col ">
+            <div class="card shadow-sm ">
+
+                <svg class="bd-placeholder-img card-img-top " width="100% " height="225 " xmlns="http://www.w3.org/2000/svg " role="img " aria-label="Placeholder: Thumbnail " preserveAspectRatio="xMidYMid slice " focusable="false ">
+                    <title>Placeholder</title>
+                    <rect width="100% " height="100% " fill="#55595c "></rect>
+                    <text x="10% " y="50% " fill="#eceeef " dy=".3em ">Crea tu puesto de trabajo para que asi los empleados
+                        lleguen con mas facilidad a tu empresa.</text>
+                </svg>
+                <div class="card-body ">
+                    <div class="d-flex justify-content-between align-items-center ">
+                        <div class="btn-group ">
+                            <a href="user/LoginUsuario.html " class="btn btn-success btn_crearPuesto">Crear puesto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button onclick="Most()" class="btn btn-primary btn_mostrar mt-4">Mostrar</button>
+
+        <table class="table  table-striped">
+            <thead class="thead">
+                <tr>
+                    <th>ID</th>
+                    <th>TIPO</th>
+
+                    <th>URL</th>
+                    <th>CATEGORIA</th>
+                    <th>DESCRIPCION</th>
+                    <th>COMO APLICAR</th>
+                    <th>EMAIL</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody id="tabla">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="assets/js/puestos.js"></script>
+    <script src="/__/firebase/8.2.9/firebase-app.js "></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/8.2.9/firebase-analytics.js "></script>
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js "></script>
+</body>
+
+
+</html>
