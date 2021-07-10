@@ -1,5 +1,3 @@
-
-
 <?php
 
 require_once "../Filehandler/Ifilehandler.php";
@@ -12,28 +10,19 @@ $result = null;
 $message = "";
 
 session_start();
-
 $service = new UserService("../database");
-
-if(isset($_POST['userName']) && isset($_POST['contraseña'])){
-
-    $result = $service->Login($_POST['userName'],$_POST['contraseña']);
-
-    if($result != null){
-
+if (isset($_POST['userName']) && isset($_POST['contraseña'])) {
+    $result = $service->Login($_POST['userName'], $_POST['contraseña']);
+    if ($result != null) {
         $_SESSION['user'] = $result;
         header("Location: admin2.php");
         exit();
-
-    }else{
+    } else {
         $message = "Usuario o contraseña incorrect@s";
     }
-
 }
 
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -49,41 +38,29 @@ if(isset($_POST['userName']) && isset($_POST['contraseña'])){
 
 <body>
 
-<form action="loginadmin.php" class="caja_login" method="POST">
+    <form action="loginadmin.php" class="caja_login" method="POST">
 
-<?php if($message!=""): ?>
-  <div class="alert alert-danger" role="alert">
-      <?= $message ?>
-  </div>
- <?php endif; ?>
-    <main>
-
-       
-            <h1>Inicio de seccion</h1>
+        <?php if ($message != "") : ?>
+            <div class="alert alert-danger" role="alert">
+                <?= $message ?>
+            </div>
+        <?php endif; ?>
+        <main>
+            <h1>Inicio de sesión</h1>
             <label for="userName" class="sr-only">Nombre de usuario</label>
             <input type="text" id="userName" class="form-control" placeholder="Correo electronico" name="userName" required autofocus>
             <label for="contraseña" class="sr-only">Contraseña</label>
             <input type="password" id="contraseña" class="form-control" placeholder="Contraseña" name="contraseña" required>
             <div class="checkbox mb-3">
+            </div>
+            <button type="submit" style="color: white;">Entrar</button>
+        </main>
 
-</div>
-            <button  type="submit" style="color: white;">Entrar</button>
+        <script src="../assets/js/login_admin.js"></script>
 
-        
+        <a href="../index.html" class="btn btn-success .inicioDeSesionVolver">Volver</a>
 
-    </main>
-
-    <script src="../assets/js/login_admin.js"></script>
-
-    <a href="../index.html" class="btn btn-success" style=" text-align: center;
-    border: 2px solid #3498db;
-    padding: 20px 40px;
-    outline: none;
-    color: white;
-    border-radius: 24px;
-    background:#191919;">Volver</a>
-
-</form>
+    </form>
 </body>
 
 </html>

@@ -4,21 +4,21 @@ body {
     font-family: 'robotic 'sans-serif;
     background-image: url(../img/admin.jpg);
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 
-
-.caja_login{
-width: 600px;
-padding: 90px;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%,-50%);
-background: #191919;
-text-align: center;
+.caja_login {
+    width: 600px;
+    padding: 90px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    text-align: center;
+    border-radius: 25px;
 }
 
 .caja_login h1 {
@@ -64,4 +64,14 @@ text-align: center;
     border-radius: 24px;
     transition: 0.25s;
     cursor: pointer;
+}
+
+.inicioDeSesionVolver {
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 20px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    background: #191919;
 }
